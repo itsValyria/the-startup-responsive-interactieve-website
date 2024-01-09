@@ -1,0 +1,68 @@
+/* --------------------- Root & Font --------------------- */
+
+@font-face {
+  font-family: 'GilroyExtraBold';
+  src: url('./fonts/Gilroy-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'GilroyLight';
+  src: url('./fonts/Gilroy-Light.otf') format('opentype');
+}
+
+:root {
+  --base--black: #202020;
+  --base--grey-19: #4A4A4A;
+  --base--grey-62: #AAAAAA;
+  --base--grey-97: #F8F8F8;
+  --base--white: #ffffff;
+
+  --primary--yellow-accent: #E0B31E;
+  --primary--orange-accent: #E09B44;
+  --primary--blue-accent: #74C9C3;
+  --primary--green-accent: #7ABA4A;
+  
+  --primary--yellow-background: #FCF7E8;
+  --primary--orange-background: #FCF5EC;
+  --primary--blue-background: #F1FAF9;
+  --primary--green-background: #F2F8ED;
+}
+
+/* --------------------- Elements --------------------- */
+
+body {
+  background-color: var(--base--white);
+  font-family: GilroyLight;
+}
+
+/* --------------------- Media Queries --------------------- */
+
+/* XS */
+
+@media screen and (max-width: 575px) {
+
+}
+
+/* S */
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  
+}
+
+/* M */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  
+}
+
+/* L */
+
+@media screen and (min-width: 1200px) and (max-width: 1559px) {
+  
+}
+
+/* XL */
+
+@media screen and (min-width: 1560px) {
+  
+}
