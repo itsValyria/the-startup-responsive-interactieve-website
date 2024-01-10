@@ -30,6 +30,10 @@
 
 /* --------------------- Elements --------------------- */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--base--white);
   font-family: GilroyLight;
