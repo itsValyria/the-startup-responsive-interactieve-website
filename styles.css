@@ -36,7 +36,76 @@ html {
 
 body {
   background-color: var(--base--white);
-  font-family: GilroyLight;
+  font-family: MuseoSans;
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+  color: unset;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: GilroyExtraBold;
+}
+
+/* --------------------- Navigation --------------------- */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+}
+
+.nav__logo {
+  width: 6em;
+}
+
+.nav__menu--button {
+  font-size: 1.2em;
+}
+
+.nav__menu {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0.4em;
+}
+
+.nav__menu--icon {
+  height: 1.2em;
+}
+
+/* --------------------- Footer --------------------- */
+
+.footer {
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer__logo {
+  width: 8em;
+  padding-bottom: 2em;
+}
+
+.footer__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.footer__socials {
+  padding-top: 1em;
+}
+
+.footer__socials img {
+  width: 2em;
+  padding: 0 0.4em;
 }
 
 /* --------------------- Media Queries --------------------- */
