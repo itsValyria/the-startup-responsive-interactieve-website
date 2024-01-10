@@ -6,8 +6,8 @@
 }
 
 @font-face {
-  font-family: 'GilroyLight';
-  src: url('./fonts/Gilroy-Light.otf') format('opentype');
+  font-family: 'MuseoSans';
+  src: url('./fonts/MuseoSans.otf') format('opentype');
 }
 
 :root {
