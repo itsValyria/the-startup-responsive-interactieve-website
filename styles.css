@@ -37,6 +37,8 @@ html {
 body {
   background-color: var(--base--white);
   font-family: MuseoSans;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -47,6 +49,7 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: GilroyExtraBold;
+  margin-bottom: 0;
 }
 
 /* --------------------- Navigation --------------------- */
@@ -128,11 +131,22 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-.main__content {
+.main__intro--results {
   grid-column: col-start 2 / span 10;
 }
 
-/* grid-column: col-start 2 / span 10; */
+.main__scores {
+  grid-column: col-start 2 / span 10;
+}
+
+.main__scores--blue {
+  font-size: 2em;
+  color: var(--primary--blue-accent);
+}
+
+.main__content {
+  grid-column: col-start 2 / span 10;
+}
 
 /* --------------------- Media Queries --------------------- */
 
