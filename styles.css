@@ -123,47 +123,7 @@ h1, h2, h3, h4, h5, h6 {
   gap: 20px;
 }
 
-.main__intro {
-  text-align: center;
-  grid-column: col-start 2 / span 10;
-}
-
-.main__timeline {
-  background-color: var(--base--grey-62);
-  width: 2px;
-  height: 100vh;
-  position: sticky;
-  top: 0;
-  grid-column: col-start 2 / span 3;
-  grid-row: 2;
-}
-
-.main__timeline--active {
-  background-color: var(--base--black);
-  height: 10%;
-  position: relative;
-
-}
-
-.main__timeline--dot {
-  background-color: var(--base--black);
-  position: absolute;
-  bottom: 0;
-  left: -4px;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-}
-
-.main__timeline--fade {
-  height: 160px;
-  background: linear-gradient(180deg, var(--base--white) 0%, var(--base--grey-62) 33%,var(--base--black) 100%);
-}
-
-.main__timeline--content {
-  grid-column: col-start 3 / span 9;
-  grid-row: 2;
-}
+/* grid-column: col-start 2 / span 10; */
 
 /* --------------------- Media Queries --------------------- */
 
