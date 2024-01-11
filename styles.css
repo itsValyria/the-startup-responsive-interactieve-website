@@ -123,6 +123,15 @@ h1, h2, h3, h4, h5, h6 {
   gap: 20px;
 }
 
+.main__intro {
+  grid-column: col-start 2 / span 10;
+  text-align: center;
+}
+
+.main__content {
+  grid-column: col-start 2 / span 10;
+}
+
 /* grid-column: col-start 2 / span 10; */
 
 /* --------------------- Media Queries --------------------- */
