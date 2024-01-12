@@ -152,6 +152,14 @@ h1, h2, h3, h4, h5, h6 {
   grid-column: col-start 2 / span 10;
 }
 
+/* .main__content--carrousel {
+
+} */
+
+.main__content--carrousel img {
+  width: 52px;
+}
+
 /* --------------------- Media Queries --------------------- */
 
 /* XS */
