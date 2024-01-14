@@ -32,17 +32,20 @@
 
     <section class="main__scores">
       <article>
-        <h2 class="main__scores--blue">101</h2>
+        <h2 class="main__scores--blue value" akhi="101" id="corpScore">0</h2>
         <h3>B corp score</h3>
         <p>We have submitted our B Corp Assessment. And are now patiently waiting to get into verification to become B Corp certified.</p>
       </article>
       <article>
-        <h3 class="main__scores--blue">8</h2>
+        <h3 class="main__scores--blue value" akhi="8" id="custSatisfaction">0</h2>
         <h3>Customer Satisfaction</h3>
         <p>We've completed surveys, receiving an average score of 7.6, aiming to enhance our collaboration with clients continuously.</p>
       </article>
       <article>
-        <h2 class="main__scores--blue">95%</h2>
+        <div class="main__scores--percentage">
+          <h2 class="main__scores--blue  value" akhi="95" id="purpDrivenClients">0</h2>
+          <h2 class="main__scores--blue">%</h2>
+        </div>
         <h3>Purpose driven clients</h3>
         <p>Recently, we began quantifying the number of purpose-driven clients we serve, which is 95% in 2022</p>
       </article>
@@ -56,31 +59,54 @@
         <p>We exclusively work for organizations that are purpose driven and we work on projects that directly contribute to their positive impact. Our focus is on areas where we can make a difference, such as digital inclusion, equality, sustainability, participation, education, and healthcare.</p>
       </article>
 
-      <article class="main__content--carrousel"> 
-        <img src="assets/purpose-driven-clients.svg" alt="Globe icon">
-        <h3>95% purpose driven clients</h3>
-        <p>Our commitment has always been to work on meaningful projects. Recently, we began quantifying the number of purpose-driven clients we serve, which is 95% in 2022.</p>
+      <article class="main__content--carrousel slideshow-container"> 
+        <section class="mySlides fade">
+          <img src="assets/purpose-driven-clients.svg" alt="Globe icon">
+          <h3>95% purpose driven clients</h3>
+          <p>Our commitment has always been to work on meaningful projects. Recently, we began quantifying the number of purpose-driven clients we serve, which is 95% in 2022.</p>
+        </section>
+
+        <section class="mySlides fade">
+          <img src="assets/revenue-donated.svg" alt="Paper boat icon">
+          <h3>5% of our revenue donated</h3>
+          <p>This year, we have allocated 5% of our total revenue to carefully selected social projects in the form of discounts, pro bono work, and volunteer efforts.</p>
+        </section>
+
+        <section class="mySlides fade">
+          <img src="assets/customer-surveys.svg" alt="Happy person icon">
+          <h3>Customer Satisfaction surveys</h3>
+          <p>We've completed surveys, receiving an average score of 7.6, aiming to enhance our collaboration with clients continuously. These surveys also help us gauge how muchour efforts contribute to our clients' positive outcomes</p>
+        </section>
+
+        <section class="mySlides fade">
+          <img src="assets/quality-guaranteed.svg" alt="Happy customer icon">
+          <h3>Quality Guaranteed</h3>
+          <p>Our ISO 9001 certificies our consistent and high-quality service to customers, adhering to strict requirements, process control, and continuous improvement.</p>
+        </section>
         
-        <img src="assets/revenue-donated.svg" alt="Paper boat icon">
-        <h3>5% of our revenue donated</h3>
-        <p>This year, we have allocated 5% of our total revenue to carefully selected social projects in the form of discounts, pro bono work, and volunteer efforts.</p>
-        
-        <img src="assets/customer-surveys.svg" alt="Happy person icon">
-        <h3>Customer Satisfaction surveys</h3>
-        <p>We've completed surveys, receiving an average score of 7.6, aiming to enhance our collaboration with clients continuously. These surveys also help us gauge how muchour efforts contribute to our clients' positive outcomes</p>
-        
-        <img src="assets/quality-guaranteed.svg" alt="Happy customer icon">
-        <h3>Quality Guaranteed</h3>
-        <p>Our ISO 9001 certificies our consistent and high-quality service to customers, adhering to strict requirements, process control, and continuous improvement.</p>
-        
-        <img src="assets/secure-information.svg" alt="Secure lock in shield icon">
-        <h3>Secure information</h3>
-        <p>ISO 27001 serves as an information securitymanagement system, protecting confidential information ofcustomers and stakeholders, data breaches, and security risks.</p>
-        
-        <img src="assets/human-centered.svg" alt="Person icon">
-        <h3>Human centered design</h3>
-        <p>We have enhanced our approach with more internal expertise, methodology and practices. Additionally, we now provide clients with roadmaps that prioritize continuous user feedback throughout the project.</p>
+        <section class="mySlides fade">
+          <img src="assets/secure-information.svg" alt="Secure lock in shield icon">
+          <h3>Secure information</h3>
+          <p>ISO 27001 serves as an information securitymanagement system, protecting confidential information ofcustomers and stakeholders, data breaches, and security risks.</p>
+        </section>
+
+        <section class="mySlides fade">
+          <img src="assets/human-centered.svg" alt="Person icon">
+          <h3>Human centered design</h3>
+          <p>We have enhanced our approach with more internal expertise, methodology and practices. Additionally, we now provide clients with roadmaps that prioritize continuous user feedback throughout the project.</p>
+        </section>
       </article>
+      
+      <div class="main__carrousel--navigation">
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span> 
+        <span class="dot" onclick="currentSlide(6)"></span> 
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
 
       <!-- -------------- Our People -------------- -->
       <article class="main__content--intro">
@@ -194,5 +220,6 @@
   </footer>
 
   <script src="script.js"></script>
+
 </body>
 </html>
