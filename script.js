@@ -114,3 +114,38 @@ function countingAnimation(elementId) {
   
   animate();
 }
+
+// Remove carrousel on PC media queries
+
+window.addEventListener('load', () => { if(window.matchMedia("(min-width: 1200px)").matches) callDisplayBlock() })
+
+const mql = window.matchMedia("(min-width: 1200px)");
+mql.addEventListener("change", screenTest);
+
+function screenTest(e) {
+  if (e.matches) {
+    /* the viewport is 1200 pixels wide or more */
+    callDisplayBlock()
+  } else {
+    /* the viewport is more than 1200 pixels less */
+    for (const slide of Object.keys(slideIndexes)) {
+      showSlides(slide);
+    }
+  }
+}
+
+function callDisplayBlock() {
+  for (const slide of Object.keys(slideIndexes)) {
+    displayBlock(slide);
+  }
+}
+
+function displayBlock(id) {
+  const className = `.carrousel--${id}`;
+  const slides = document.querySelectorAll(`${className} .mySlides`);
+
+  const slideIndex = slideIndexes[id];
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "block";  
+  }
+}

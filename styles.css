@@ -58,6 +58,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0.4em 0;
 }
 
+p {
+  line-height: 1.6;
+}
+
 /* --------------------- Navigation --------------------- */
 
 .nav {
@@ -170,6 +174,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 52px;
 }
 
+.main__content--photo {
+  width: 85vw;
+  margin: 1em auto;
+}
+
 /* --------------------- Carrousel / Slideshow --------------------- */
 
 .main__carrousel--navigation {
@@ -235,39 +244,256 @@ h1, h2, h3, h4, h5, h6 {
 /* XS */
 
 @media screen and (max-width: 575px) {
-  /* body {
-    background-color: var(--primary--blue-background);
-  } */
+  h1 {
+    margin: 1em 0;
+  }
+  
+  h2, h3, h4, h5, h6 {
+    margin: 0.8em 0;
+  }
+
+  .main__scores--blue {
+    margin-bottom: 0.4em;
+  }
+
+  .main__content--intro {
+    margin: 2em 0;
+  }
 }
 
 /* S */
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  /* body {
-    background-color: var(--primary--green-background);
-  } */
+  h1 {
+    font-size: 2.6em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  .main__content--carrousel {
+    margin-top: 2em;
+  }
+
+  .main__content--intro {
+    margin-top: 2em;
+  }
+
+  .nav__logo {
+    width: 8em;
+  }
+
+  .nav__menu--button {
+    font-size: 1.6em;
+  }
+
+  .nav__menu--icon {
+    height: 1.6em;
+  }
 }
 
 /* M */
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  /* body {
-    background-color: var(--primary--orange-background);
-  } */
+  h1 {
+    font-size: 2.6em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  .main__content--carrousel {
+    margin-top: 2em;
+  }
+
+  .main__content--intro {
+    margin-top: 2em;
+  }
+
+  .nav {
+    width: 85vw;
+    margin: 0 auto;
+  }
+
+  .nav__logo {
+    width: 8em;
+  }
+
+  .nav__menu--button {
+    font-size: 1.6em;
+  }
+
+  .nav__menu--icon {
+    height: 1.6em;
+  }
 }
 
 /* L */
 
 @media screen and (min-width: 1200px) and (max-width: 1559px) {
-  /* body {
-    background-color: var(--primary--yellow-background);
-  } */
+  h1 {
+    font-size: 2.6em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  .nav {
+    width: 85vw;
+    margin: 0 auto;
+  }
+
+  .nav__logo {
+    width: 8em;
+  }
+
+  .nav__menu--button {
+    font-size: 1.6em;
+  }
+
+  .nav__menu--icon {
+    height: 1.6em;
+  }
+
+  .main__content--intro {
+    margin-top: 2em;
+  }
+  
+  .main__intro {
+    grid-column: col-start 4 / span 6;
+  }
+
+  .main__intro--results {
+    grid-column: col-start 2 / span 5;
+  }
+
+  .main__scores {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0 3em;
+  }
+
+  .main__scores--blue {
+    font-size: 2.6em;
+  }
+
+  .main__carrousel--navigation {
+    display: none;
+  }
+  
+  .main__content--carrousel {
+    margin: 3em 0;
+    display: grid;
+    gap: 3em;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* XL */
 
 @media screen and (min-width: 1560px) {
-  /* body {
-    background-color: var(--primary--blue-background);
-  } */
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  .nav {
+    width: 85vw;
+    margin: 0 auto;
+  }
+
+  .nav__logo {
+    width: 8em;
+  }
+
+  .nav__menu--button {
+    font-size: 1.6em;
+  }
+
+  .nav__menu--icon {
+    height: 1.6em;
+  }
+
+  .main__content--intro {
+    margin: 4em 0;
+    max-width: 55em;
+  }
+  
+  .main__intro {
+    grid-column: col-start 5 / span 4;
+    margin: 2em 0;
+  }
+
+  .main__intro--results {
+    grid-column: col-start 2 / span 5;
+  }
+
+  .main__scores {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0 3em;
+    margin: 2em 0;
+  }
+
+  .main__scores--blue {
+    font-size: 3em;
+  }
+
+  .main__carrousel--navigation {
+    display: none;
+  }
+  
+  .main__content--carrousel {
+    margin: 6em 0;
+    display: grid;
+    gap: 4em;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .main__content--carrousel p {
+    font-size: 1em;
+  }
+
+  .main__outro {
+    max-width: 55em;
+    margin: 6em auto;
+  }
 }
