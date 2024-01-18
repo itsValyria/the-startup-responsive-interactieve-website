@@ -28,6 +28,15 @@
   --primary--green-background: #F2F8ED;
 }
 
+/* Accessibility */
+
+@media (prefers-contrast: more) {
+
+  :root {
+    --primary--blue-accent: #3A7878;
+  }
+}
+
 /* --------------------- Elements --------------------- */
 
 html {
