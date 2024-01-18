@@ -7,6 +7,8 @@ Dit project is een webpagina wat onderdeel is van de website van [Unc Inc](https
 
 Op deze pagina staat beschreven wat de impact is van Unc Inc en hoe zij dit voor elkaar krijgen.
 
+![image](https://github.com/itsValyria/the-startup-responsive-interactieve-website/assets/76444716/c56e1f1f-dd48-4ad0-95e4-9893a62fc19c)
+
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
