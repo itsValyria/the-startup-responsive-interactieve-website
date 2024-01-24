@@ -102,7 +102,7 @@ function countingAnimation(elementId) {
   const counter = document.getElementById(elementId);
 
   const animate = () => {
-      const value = + counter.getAttribute("akhi");
+      const value = + counter.getAttribute("data-akhi");
       const data = + counter.innerText;
     if(data < value) {
       counter.innerText++;
