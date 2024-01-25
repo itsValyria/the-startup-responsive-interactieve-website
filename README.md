@@ -84,6 +84,17 @@ Ook heb ik gebruik gemaakt van custom properties, zodat ik de huisstijl makkelij
 }
 ```
 
+Ook heb ik een media query aangemaakt met ```prefers-contrast: more``` waar de falende kleur aangepast wordt naar een kleur die wel goedgekeurd is door de contrast checker.
+
+```css
+@media (prefers-contrast: more) {
+
+  :root {
+    --primary--blue-accent: #3A7878;
+  }
+}
+```
+
 ### JavaScript
 
 Ik heb JavaScript gebruikt voor de carrousel op mobiel, en ook voor de nummer animation count.
